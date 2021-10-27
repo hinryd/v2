@@ -37,9 +37,9 @@
 						stroke-linecap="round"
 						stroke-linejoin="round"
 						stroke-width="2"
-						d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
+						d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
 					/></svg
-				>back</a
+				></a
 			>
 		</div>
 
