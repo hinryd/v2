@@ -10,13 +10,19 @@
 			alt="profile"
 		/>
 		<figcaption class="p-5">
-			<p class="text-4xl underline underline-offset-5">Henry Li</p>
+			<p
+				class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent font-extrabold text-4xl"
+			>
+				Henry Li
+			</p>
 			<p class="text-2xl">coder, memer, lurker</p>
 		</figcaption>
 	</figure>
 
 	<div class="flex flex-col gap-3">
-		<h2 class="text-4xl font-bold underline underline-7 underline-offset-4">Work</h2>
+		<h2 class="text-4xl font-bold underline underline-double underline-4 underline-offset-4">
+			Work
+		</h2>
 		<p class="text-xl">
 			Henry is a freelance and a full-stack developer based in Hong Kong with a passion for building
 			digital services/stuff he wants. He has a knack for all things launching products, from
@@ -30,7 +36,9 @@
 	</div>
 
 	<div class="flex flex-col gap-3">
-		<h2 class="text-4xl font-bold underline underline-7 underline-offset-4">Bio</h2>
+		<h2 class="text-4xl font-bold underline underline-double underline-4 underline-offset-4">
+			Bio
+		</h2>
 		<div class="grid grid-cols-12">
 			<p class="font-bold col-span-2">1994</p>
 			<p class="col-span-10">Born in Hong Kong</p>
@@ -52,7 +60,9 @@
 	</div>
 
 	<div class="flex flex-col gap-4">
-		<h2 class="text-4xl font-bold underline underline-7 underline-offset-4">Reach</h2>
+		<h2 class="text-4xl font-bold underline underline-double underline-4 underline-offset-4">
+			Reach
+		</h2>
 		<div class="flex gap-3">
 			<a
 				class="block flex items-center gap-2 px-3 py-2 bg-indigo-200 rounded-full hover:(bg-indigo-100)"
