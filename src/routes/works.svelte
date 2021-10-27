@@ -3,9 +3,15 @@
 		const repos = await fetch('https://api.github.com/users/hinryd/repos?sort=pushed').then((res) =>
 			res.json()
 		);
+		const pictures = await fetch(
+			`https://api.unsplash.com/photos/random?count=${repos.length}&client_id=${
+				import.meta.env.VITE_UNSPLASH_ACCESS_KEY
+			}`
+		).then((res) => res.json());
 		return {
 			props: {
-				repos
+				repos,
+				pictures
 			}
 		};
 	}
@@ -13,6 +19,7 @@
 
 <script lang="ts">
 	export let repos;
+	export let pictures;
 </script>
 
 <main class="px-8">
@@ -37,13 +44,14 @@
 		</div>
 
 		<div class="grid sm:grid-cols-2 gap-6">
-			{#each repos as repo}
+			{#each repos as repo, i}
 				<a
 					class="flex flex-col items-center transition transform hover:(opacity-70 scale-105)"
 					href={repo.html_url}
 				>
 					<div
 						class="w-full h-60 bg-gray-200 rounded-4xl bg-cover bg-center border-5 border-white shadow-md"
+						style="background-image: url({pictures[i].urls.small})"
 					/>
 					<p class="text-2xl">{repo.name}</p>
 					<p class="font-bold px-5">{repo.description}</p>
