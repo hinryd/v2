@@ -1,11 +1,11 @@
 <main class="flex flex-col items-center items-stretch px-8 gap-5">
-	<h2 class="font-bold bg-gray-200 bg-opacity-50 p-4 rounded-md">
+	<h2 class="font-bold bg-gray-200 bg-opacity-50 p-4 rounded-md hover:bg-opacity-100">
 		Hello, I'm a full-stack developer based in Hong Kong!
 	</h2>
 
 	<figure class="flex items-center">
 		<img
-			class="h-30 w-30 rounded-full border-10 border-white shadow-xl"
+			class="h-30 w-30 rounded-full border-10 border-white shadow-md"
 			src="https://avatars.githubusercontent.com/u/48958400?v=4"
 			alt="profile"
 		/>
@@ -23,21 +23,22 @@
 			planning and designing all the way to solving real-life problems with code. When not online,
 			he loves working out.
 		</p>
-		<a class="self-center text-white font-bold bg-indigo-600 rounded px-5 py-3" href="/works"
-			>See my works</a
+		<a
+			class="self-center text-white font-bold bg-indigo-600 rounded px-5 py-3 transition transform hover:(bg-indigo-900 scale-105 shadow-xl)"
+			href="/works">See my works</a
 		>
 	</div>
 
 	<div class="flex flex-col gap-3">
 		<h2 class="text-4xl font-bold underline underline-7 underline-offset-4">Bio</h2>
 		<div class="grid grid-cols-12">
-			<p class="col-span-2">1994</p>
+			<p class="font-bold col-span-2">1994</p>
 			<p class="col-span-10">Born in Hong Kong</p>
-			<p class="col-span-2">2016</p>
+			<p class="font-bold col-span-2">2016</p>
 			<p class="col-span-10">
 				Completed the Bachelor's program in The University of Manchester majoring in Economics
 			</p>
-			<p class="col-span-2">2019</p>
+			<p class="font-bold col-span-2">2019</p>
 			<p class="col-span-10">
 				Self-learned web development via <a
 					class="underline"
@@ -45,7 +46,7 @@
 					>online course</a
 				>
 			</p>
-			<p class="col-span-2">Present</p>
+			<p class="font-bold col-span-2">Present</p>
 			<p class="col-span-10">Work professionally as a developer</p>
 		</div>
 	</div>
