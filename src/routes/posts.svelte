@@ -52,7 +52,7 @@
 						class="w-full h-60 bg-gray-200 rounded-4xl bg-cover bg-center border-5 border-white shadow-md"
 						style="background-image: url({pictures[i].urls.small})"
 					/>
-					<p class="font-bold">{post.title}</p>
+					<p class="text-2xl">{post.title}</p>
 				</a>
 			{/each}
 		</div>
