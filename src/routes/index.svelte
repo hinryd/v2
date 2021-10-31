@@ -1,24 +1,21 @@
 <main class="flex flex-col items-center items-stretch px-8 gap-5 max-w-3xl mx-auto">
-	<div
-		class="relative font-bold bg-gray-200/80 p-4 rounded-lg text-center my-5"
-		w-hover="bg-gray-100"
-	>
-		Hello, I'm a full-stack developer based in Hong Kong!
+	<div class="relative bg-gray-200 bg-opacity-80 p-4 my-5 rounded-md" w-hover="bg-gray-100">
+		<p class="font-bold text-center">Hello, I'm a full-stack developer based in Hong Kong!</p>
 		<div
-			class="absolute top-0 left-1/2 w-25 h-25 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+			class="absolute top-0 left-1/2 w-25 h-25 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-65"
 		/>
 		<div
-			class="absolute top-0 left-1/2 w-25 h-25 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animate-delay-4s"
+			class="absolute top-0 left-1/2 w-25 h-25 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-65 animate-blob animate-delay-2s"
 		/>
 		<div
-			class="absolute top-0 right-1/2 w-25 h-25 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animate-delay-2s"
+			class="absolute top-0 right-1/2 w-25 h-25 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-65 animate-blob"
 		/>
 		<div
-			class="absolute top-0 right-1/2 w-25 h-25 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animate-delay-7s"
+			class="absolute top-0 right-1/2 w-25 h-25 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-65 animate-blob animate-delay-4s"
 		/>
 	</div>
 
-	<figure class="relative flex items-center group">
+	<figure class="relative flex items-center group animate-animated" w-hover="animated-pulse">
 		<img
 			class="h-30 w-30 rounded-full border-10 border-white shadow-md"
 			src="https://avatars.githubusercontent.com/u/48958400?v=4"
@@ -27,7 +24,8 @@
 
 		<figcaption class="p-5">
 			<p
-				class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent font-extrabold text-4xl sm:(text-5xl leading-tight)"
+				class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent font-extrabold text-4xl"
+				w-sm="text-5xl leading-tight"
 			>
 				Henry Li
 			</p>
