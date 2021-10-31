@@ -1,7 +1,7 @@
 <main class="flex flex-col items-center items-stretch px-8 gap-5 max-w-3xl mx-auto">
 	<div
-		class="relative font-bold bg-gray-200 bg-opacity-50 p-4 rounded-md text-center my-5"
-		w-hover="bg-opacity-100"
+		class="relative font-bold bg-gray-200/80 p-4 rounded-lg text-center my-5"
+		w-hover="bg-gray-100"
 	>
 		Hello, I'm a full-stack developer based in Hong Kong!
 		<div

@@ -10,7 +10,8 @@
 <nav class="h-20 flex justify-between items-center px-5">
 	<a class="flex items-center group" href="/">
 		<svg
-			class="w-10 h-10 transition transform rotate-180 group-active:(-rotate-180)"
+			class="w-10 h-10 transition transform rotate-180"
+			w-group-active="-rotate-180"
 			data-darkreader-inline-stroke=""
 			fill="none"
 			stroke="currentColor"
@@ -24,7 +25,7 @@
 				d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
 			/></svg
 		>
-		<p class="font-bold font-mono group-active:font-thin">hinryd</p>
+		<p class="font-bold font-mono">hinryd</p>
 	</a>
 	<div>
 		<!-- <button on:click={toggleDarkMode}>
