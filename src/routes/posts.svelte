@@ -45,7 +45,8 @@
 		<div class="grid sm:grid-cols-2 gap-6">
 			{#each posts as post, i}
 				<a
-					class="flex flex-col items-center transition transform hover:(opacity-70 scale-105)"
+					class="flex flex-col items-center transition transform"
+					w-hover="opacity-70 scale-105"
 					href={post.url}
 				>
 					<div

@@ -1,6 +1,7 @@
 <main class="flex flex-col items-center items-stretch px-8 gap-5 max-w-3xl mx-auto">
-	<h2
-		class="relative font-bold bg-gray-200 bg-opacity-50 p-4 rounded-md text-center hover:bg-opacity-100"
+	<div
+		class="relative font-bold bg-gray-200 bg-opacity-50 p-4 rounded-md text-center my-5"
+		w-hover="bg-opacity-100"
 	>
 		Hello, I'm a full-stack developer based in Hong Kong!
 		<div
@@ -10,12 +11,12 @@
 			class="absolute top-0 left-1/2 w-25 h-25 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animate-delay-4s"
 		/>
 		<div
-			class="absolute top-0 right-1/2 w-25 h-25 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+			class="absolute top-0 right-1/2 w-25 h-25 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animate-delay-2s"
 		/>
 		<div
-			class="absolute top-0 right-1/2 w-25 h-25 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animate-delay-5s"
+			class="absolute top-0 right-1/2 w-25 h-25 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animate-delay-7s"
 		/>
-	</h2>
+	</div>
 
 	<figure class="relative flex items-center group">
 		<img
@@ -43,7 +44,8 @@
 			real-life problems with code. When not online, he loves working out 💪.
 		</p>
 		<a
-			class="self-center text-white font-bold bg-indigo-600 rounded px-5 py-3 hover:(transition transform scale-105 shadow-xl text-shadow-lg bg-opacity-90 bg-gradient-to-r from-indigo-600 to-green-400 animate-gradx)"
+			class="self-center text-white font-bold bg-indigo-600 rounded px-5 py-3 transition transform"
+			w-hover="scale-105 shadow-xl text-shadow-lg bg-opacity-90 bg-gradient-to-r from-indigo-600 to-green-400 animate-gradx"
 			href="/works">See my works</a
 		>
 	</div>
@@ -78,7 +80,8 @@
 		</h2>
 		<div class="flex gap-2">
 			<a
-				class="block flex items-center gap-2 px-3 py-2 bg-green-200 rounded-full hover:(bg-gradient-to-r from-green-200 to-blue-200 animate-gradx)"
+				class="block flex items-center gap-2 px-3 py-2 bg-green-200 rounded-full"
+				w-hover="bg-gradient-to-r from-green-200 to-blue-200 animate-gradx"
 				href="https://github.com/hinryd"
 			>
 				<svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +93,8 @@
 			</a>
 
 			<a
-				class="block flex items-center gap-2 px-3 py-2 bg-green-200 rounded-full hover:(bg-gradient-to-r from-green-200 to-blue-200 animate-gradx)"
+				class="block flex items-center gap-2 px-3 py-2 bg-green-200 rounded-full"
+				w-hover="bg-gradient-to-r from-green-200 to-blue-200 animate-gradx"
 				href="https://instagram.com/henry.lkh"
 			>
 				<svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"

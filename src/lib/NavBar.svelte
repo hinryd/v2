@@ -66,8 +66,8 @@
 
 {#if showMenu}
 	<div class="grid p-3 justify-items-stretch" transition:slide on:click={toggleMenu}>
-		<a class="transition p-3 hover:(bg-gray-300 rounded-md)" href="/">Home</a>
-		<a class="transition p-3 hover:(bg-gray-300 rounded-md)" href="/works">Works</a>
-		<a class="transition p-3 hover:(bg-gray-300 rounded-md)" href="/posts">Posts</a>
+		<a class="transition p-3 rounded-xl" w-hover="bg-gray-300" href="/">Home</a>
+		<a class="transition p-3 rounded-xl" w-hover="bg-gray-300" href="/works">Works</a>
+		<a class="transition p-3 rounded-xl" w-hover="bg-gray-300" href="/posts">Posts</a>
 	</div>
 {/if}
