@@ -10,7 +10,7 @@
 		).then((res) => res.json());
 		return {
 			props: {
-				repos,
+				repos: repos.filter((repo) => repo.homepage),
 				pictures
 			}
 		};
@@ -47,14 +47,14 @@
 			{#each repos as repo, i}
 				<a
 					class="flex flex-col items-center transition transform hover:(opacity-70 scale-105)"
-					href={repo.html_url}
+					href={repo.homepage}
 				>
 					<div
-						class="w-full h-60 bg-gray-200 rounded-4xl bg-cover bg-center border-5 border-white shadow-md"
+						class="w-full h-60 bg-gray-200 rounded-2xl bg-cover bg-center border-5 border-white shadow-md"
 						style="background-image: url({pictures[i].urls.small})"
 					/>
 					<p class="text-2xl">{repo.name}</p>
-					<p class="font-bold px-5">{repo.description}</p>
+					<p class="px-5">{repo.description ?? ''}</p>
 				</a>
 			{/each}
 		</div>
