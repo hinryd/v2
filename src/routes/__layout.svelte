@@ -9,6 +9,7 @@
 <script>
 	export let key;
 
+	import 'virtual:windi.css';
 	import { blur } from 'svelte/transition';
 	import NavBar from '$lib/NavBar.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -23,6 +24,3 @@
 {/key}
 
 <Footer />
-
-<style windi:preflights:global windi:safelist:global>
-</style>
