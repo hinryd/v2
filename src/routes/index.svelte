@@ -1,9 +1,9 @@
 <main class="flex flex-col items-center items-stretch px-8 gap-5">
-	<h2 class="font-bold bg-gray-200 bg-opacity-50 p-4 rounded-md hover:bg-opacity-100">
+	<h2 class="font-bold bg-gray-200 bg-opacity-50 p-4 rounded-md text-center hover:bg-opacity-100">
 		Hello, I'm a full-stack developer based in Hong Kong!
 	</h2>
 
-	<figure class="flex items-center">
+	<figure class="flex items-center relative group">
 		<img
 			class="h-30 w-30 rounded-full border-10 border-white shadow-md"
 			src="https://avatars.githubusercontent.com/u/48958400?v=4"
@@ -11,7 +11,7 @@
 		/>
 		<figcaption class="p-5">
 			<p
-				class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent font-extrabold text-4xl"
+				class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent font-extrabold text-4xl sm:(text-5xl leading-tight)"
 			>
 				Henry Li
 			</p>
@@ -20,17 +20,15 @@
 	</figure>
 
 	<div class="flex flex-col gap-3">
-		<h2 class="text-4xl font-bold underline underline-double underline-4 underline-offset-4">
-			Work
-		</h2>
-		<p class="text-xl">
-			Henry is a freelance and a full-stack developer based in Hong Kong with a passion for building
-			digital services/stuff he wants. He has a knack for all things launching products, from
-			planning and designing all the way to solving real-life problems with code. When not online,
-			he loves working out.
+		<h2 class="text-4xl font-bold underline underline-double underline-4 underline-offset-4">Me</h2>
+		<p class="text-lg">
+			Henry is a passionate full-stack developer and freelancer based in Hong Kong 🇭🇰. He builds a
+			lot of quirky stuff like Telegram bot and BMI calculator. He mostly code in Typescript and
+			recently in Flutter. From launching products, to planning and designing all the way to solving
+			real-life problems with code. When not online, he loves working out 💪.
 		</p>
 		<a
-			class="self-center text-white font-bold bg-indigo-600 rounded px-5 py-3 transition transform hover:(bg-indigo-900 scale-105 shadow-xl)"
+			class="self-center text-white font-bold bg-indigo-600 rounded px-5 py-3 hover:(transition transform scale-105 shadow-xl text-shadow-lg)"
 			href="/works">See my works</a
 		>
 	</div>
@@ -39,7 +37,7 @@
 		<h2 class="text-4xl font-bold underline underline-double underline-4 underline-offset-4">
 			Bio
 		</h2>
-		<div class="grid grid-cols-12">
+		<div class="grid grid-cols-12 text-sm sm:text-lg">
 			<p class="font-bold col-span-2">1994</p>
 			<p class="col-span-10">Born in Hong Kong</p>
 			<p class="font-bold col-span-2">2016</p>
@@ -54,7 +52,7 @@
 					>online course</a
 				>
 			</p>
-			<p class="font-bold col-span-2">Present</p>
+			<p class="font-bold col-span-2">Now</p>
 			<p class="col-span-10">Work professionally as a developer</p>
 		</div>
 	</div>
@@ -63,9 +61,9 @@
 		<h2 class="text-4xl font-bold underline underline-double underline-4 underline-offset-4">
 			Reach
 		</h2>
-		<div class="flex gap-3">
+		<div class="flex gap-2">
 			<a
-				class="block flex items-center gap-2 px-3 py-2 bg-indigo-200 rounded-full hover:(bg-indigo-100)"
+				class="block flex items-center gap-2 px-3 py-2 bg-green-200 rounded-full hover:(bg-opacity-70)"
 				href="https://github.com/hinryd"
 			>
 				<svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +75,7 @@
 			</a>
 
 			<a
-				class="block flex items-center gap-2 px-3 py-2 bg-indigo-200 rounded-full hover:(bg-indigo-100)"
+				class="block flex items-center gap-2 px-3 py-2 bg-green-200 rounded-full hover:(bg-opacity-70)"
 				href="https://instagram.com/henry.lkh"
 			>
 				<svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
