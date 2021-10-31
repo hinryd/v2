@@ -1,4 +1,5 @@
 import { defineConfig } from 'windicss/helpers';
+import animate from '@windicss/plugin-animations';
 
 export default defineConfig({
 	darkMode: 'class',
@@ -9,17 +10,21 @@ export default defineConfig({
 		extend: {
 			animation: {
 				gradx: 'gradx 3s ease infinite',
-				blob: 'blob 7s infinite'
+				blob: 'blob 6s infinite'
 			},
 			keyframes: {
 				gradx: {
-					'0%, 100%': {
+					'0%': {
 						'background-size': '400% 400%',
 						'background-position': '0% 50%'
 					},
 					'50%': {
 						'background-size': '400% 400%',
 						'background-position': '100% 50%'
+					},
+					'100%': {
+						'background-size': '400% 400%',
+						'background-position': '0% 50%'
 					}
 				},
 				blob: {
@@ -38,5 +43,12 @@ export default defineConfig({
 				}
 			}
 		}
-	}
+	},
+	plugins: [
+		animate({
+			settings: {
+				animatedSpeed: 500
+			}
+		})
+	]
 });

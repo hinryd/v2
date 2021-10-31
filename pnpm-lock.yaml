@@ -5,6 +5,7 @@ specifiers:
   '@sveltejs/kit': next
   '@typescript-eslint/eslint-plugin': ^4.33.0
   '@typescript-eslint/parser': ^4.33.0
+  '@windicss/plugin-animations': ^1.0.9
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
@@ -13,7 +14,6 @@ specifiers:
   svelte: ^3.44.0
   svelte-check: ^2.2.8
   svelte-preprocess: ^4.9.8
-  svelte-windicss-preprocess: ^4.1.1
   tslib: ^2.3.1
   typescript: ^4.4.4
   vite-plugin-windicss: ^1.4.12
@@ -23,6 +23,7 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.192_svelte@3.44.0
   '@typescript-eslint/eslint-plugin': 4.33.0_cc617358c89d3f38c52462f6d809db4c
   '@typescript-eslint/parser': 4.33.0_eslint@7.32.0+typescript@4.4.4
+  '@windicss/plugin-animations': 1.0.9
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.2.1_eslint@7.32.0+svelte@3.44.0
@@ -31,7 +32,6 @@ devDependencies:
   svelte: 3.44.0
   svelte-check: 2.2.8_svelte@3.44.0
   svelte-preprocess: 4.9.8_svelte@3.44.0+typescript@4.4.4
-  svelte-windicss-preprocess: 4.1.1
   tslib: 2.3.1
   typescript: 4.4.4
   vite-plugin-windicss: 1.4.12
@@ -315,6 +315,10 @@ packages:
       windicss: 3.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@windicss/plugin-animations/1.0.9:
+    resolution: {integrity: sha512-9WsQsPzLurkwV5zaMCwmylxfSHlQ1pPmzud4ysvMkMBRB7obub9ESmqlHefcCjEhatz/ZROi1U1XOuOPPUO1nA==}
     dev: true
 
   /@windicss/plugin-utils/1.4.12:
@@ -1589,13 +1593,6 @@ packages:
       typescript: 4.4.4
     dev: true
 
-  /svelte-windicss-preprocess/4.1.1:
-    resolution: {integrity: sha512-yVeRqLZNjsjDLgXEiuvhztISKLSCn6/4JqJPUG1lOYuFqI9tJ6FAZnsyOHMh22ht0gE9sCIBAIXrUuN3edCQQA==}
-    dependencies:
-      windicss: 3.2.0
-      windicss-runtime-dom: 3.0.0
-    dev: true
-
   /svelte/3.44.0:
     resolution: {integrity: sha512-zWACSJBSncGiDvFfYOMFGNV5zDLOlyhftmO5yOZ0lEtQMptpElaRtl39MWz1+lYCpwUq4F3Q2lTzI9TrTL+eMA==}
     engines: {node: '>= 8'}
@@ -1713,10 +1710,6 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
-    dev: true
-
-  /windicss-runtime-dom/3.0.0:
-    resolution: {integrity: sha512-a12Uhu71yT1U8w0PzJ3amF9xmC8b1rWFLgXEfI/UyuwUi6D1vUACOO6vb0iY4T4OtP/bJAjQMM7lv3hMWSwLuQ==}
     dev: true
 
   /windicss/3.2.0:
