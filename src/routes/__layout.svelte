@@ -18,7 +18,7 @@
 <NavBar />
 
 {#key key}
-	<div in:blur={{ duration: 500, delay: 500 }} out:blur={{ duration: 500 }}>
+	<div in:blur={{ duration: 500, delay: 350 }} out:blur={{ duration: 500 }}>
 		<slot />
 	</div>
 {/key}
