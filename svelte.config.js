@@ -1,17 +1,20 @@
 import preprocess from 'svelte-preprocess';
-import { windi } from 'svelte-windicss-preprocess';
+import WindiCSS from 'vite-plugin-windicss';
 import adapter from '@sveltejs/adapter-netlify';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: [preprocess(), windi({})],
+	preprocess: preprocess(),
 
 	kit: {
 		adapter: adapter(),
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+		vite: {
+			plugins: [WindiCSS()]
+		}
 	}
 };
 
