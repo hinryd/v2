@@ -1,7 +1,8 @@
 <script context="module">
-	export const load = async ({ page }) => ({
+	/** @type {import('@sveltejs/kit').Load} */
+	export const load = async ({ url, params }) => ({
 		props: {
-			key: page.path
+			key: url.pathname
 		}
 	});
 </script>
