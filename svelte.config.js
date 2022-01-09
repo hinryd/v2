@@ -1,6 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import WindiCSS from 'vite-plugin-windicss';
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-auto';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
