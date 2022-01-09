@@ -70,6 +70,12 @@
 			<p class="font-bold col-span-2">Now</p>
 			<p class="col-span-10">Work professionally as a developer</p>
 		</div>
+		<a
+			class="self-center text-white font-bold bg-indigo-600 rounded px-5 py-3 transition transform"
+			w-hover="scale-105 shadow-xl text-shadow-lg bg-opacity-90 bg-gradient-to-r from-indigo-600 to-green-400 animate-gradx"
+			href="/cv211031.pdf"
+			rel="external">See my resume</a
+		>
 	</div>
 
 	<div class="flex flex-col gap-4">

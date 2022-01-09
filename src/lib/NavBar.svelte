@@ -70,5 +70,8 @@
 		<a class="transition p-3 rounded-xl" w-hover="bg-gray-300" href="/">Home</a>
 		<a class="transition p-3 rounded-xl" w-hover="bg-gray-300" href="/works">Works</a>
 		<a class="transition p-3 rounded-xl" w-hover="bg-gray-300" href="/posts">Posts</a>
+		<a class="transition p-3 rounded-xl" w-hover="bg-gray-300" href="/cv211031.pdf" rel="external"
+			>Resume</a
+		>
 	</div>
 {/if}
