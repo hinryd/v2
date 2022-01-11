@@ -45,7 +45,7 @@
 				/></svg
 			>
 		</button> -->
-		<button on:click={toggleMenu}>
+		<button on:click={toggleMenu} aria-label="Menu">
 			<svg
 				class="w-10 h-10"
 				data-darkreader-inline-stroke=""
